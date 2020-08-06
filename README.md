@@ -8,7 +8,7 @@ we've generated fake data with an obvious fake backstory.
 We ran a survey in Mallorca amongst 1st Generation Pokemon fans (Pokémon Red, Green and Blue).
 We want to answer the following question:
 
-> Where are the people who prefered to start with Bulbasaur, Charmander or Squirtle?
+> Where do poeple who preferred to start with Bulbasaur, Charmander or Squirtle live?
 
 The result of this survey is stored in a MySQL database.
 
@@ -20,7 +20,7 @@ Your job is:
     - **clean-up the data**:
       - the person who inserted the data in the database had either a faulty keyboard or faulty fingers
       - so there are some typos in the name of the pokemons (extra spaces, character swap,...)
-      - we don't want to lose this information
+      - we don't want to discard these entries
     - **only keep** the points we are interested in (those about Bulbasaur, Charmander and Squirtle)
       - lots of people didn't really understand the question and gave non starter pokemon as answer
       - we really only want Bulbasaur, Charmander and Squirtle
@@ -34,7 +34,7 @@ Your job is:
 
 ## Database Structure
 ### Host and Credentials
-You should have received the necessary information to access the database in a mail.
+The information to access the database should be included in the mail we sent you.
 
 ### Schema
 ```sql
@@ -109,7 +109,7 @@ You should at least submit the following files:
     - optionally separated css/js or you can keep everything into one html file
   - a geojson file resulting from executing the python script and accessible from the html
 
-Once you're done with the assignement, the prefered submission method is by
+Once you're done with the assignement, the preferred submission method is by
 sending us a link to a public repository where you've committed your solution (github, gitlab, bitbucket, etc)
 We accept the aforementionned files zipped in a mail attachment
 Send your submission at **desarrollo@tyrceo.com**
