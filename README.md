@@ -1,8 +1,7 @@
 # Tyrceo Hiring Test
 
 ## Foreword
-As you'll probably realize once you're done with this test,
-we've generated fake data with an obvious fake backstory.
+As you'll probably realize once you're done with this test, the data is as fake as the backstory.
 
 ## The Story
 We ran a survey in Mallorca amongst 1st Generation Pokemon fans (Pokémon Red, Green and Blue).
