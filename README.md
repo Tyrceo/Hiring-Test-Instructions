@@ -4,10 +4,10 @@
 As you'll probably realize once you're done with this test, the data is as fake as the backstory.
 
 ## The Story
-We ran a survey in Mallorca amongst 1st Generation Pokemon fans (Pokémon Red, Green and Blue).
+We ran a survey in Mallorca amongst 1st Generation Pokemon fans (Pokémon Red, Green and Blue).\
 We want to answer the following question:
 
-> Where do poeple who preferred to start with Bulbasaur, Charmander or Squirtle live?
+> Where do people who preferred to start with Bulbasaur, Charmander or Squirtle live?
 
 The result of this survey is stored in a MySQL database.
 
@@ -68,7 +68,7 @@ CREATE TABLE `data_at_coordinate` (
 ### Explanation
 #### Survey results
 The result of the survey is a list of survey locations (longitude/latitude) in Mallorca,
-along with the pokemon that won, and by how much.
+along with the pokemon that won, and by how much.\
 So a result at a given location is a tuple of `(longitude, latitude, pokemon, score)`.
 
 #### Score
@@ -80,7 +80,7 @@ score: '0.2',
 pokemon: 'Bulbasaur'
 ```
 Means that the survey done at (longitude,latitude)
-yielded, for any given pokemon, a maximum of 20% for Bulbasaur
+yielded, for any given pokemon, a maximum of 20% for Bulbasaur.\
 We are only interested in score **above or equal to 0.5**
 
 #### Database design
@@ -88,15 +88,15 @@ Since we had a fair amount of repetitions in the (pokemon, score) pair,
 we decided to split the tuple in two to reduce redundancy and save space:
  - The (longitude, latitude) part is in the `coordinates` table
  - The (pokemon, score) part is in the `data` table
+
 And the `data_at_coordinate` table stores the actual result
 as a unique pair of foreign keys (`id_coordinate`,`id_data`)
 referencing  `coordinate` and `data` respectively.
 
 
 ## Mapbox
-(https://docs.mapbox.com/mapbox-gl-js/api/)
 We generated a temporary token for you to use mapbox without having to create an account
-It should have been included in the mail we sent you.
+It should have been included in the mail we sent you.\
 Make sure you use [mapbox-gl-js](https://docs.mapbox.com/mapbox-gl-js/api/), and not the older mapbox.js
 
 ## Submission
@@ -109,8 +109,8 @@ You should at least submit the following files:
   - a geojson file resulting from executing the python script and accessible from the html
 
 Once you're done with the assignement, the preferred submission method is by
-sending us a link to a public repository where you've committed your solution (github, gitlab, bitbucket, etc)
-We accept the aforementionned files zipped in a mail attachment
+sending us a link to a public repository where you've committed your solution (github, gitlab, bitbucket, etc).\
+We also accept the aforementionned files zipped in a mail attachment.\
 Send your submission at **desarrollo@tyrceo.com**
 
 Example file structure
@@ -127,17 +127,17 @@ tyrceo_hiring_test_solution
 ```
 
 ## Suggested python version and libraries
-You are free to use any libraries you want.
-You are expected to use python 3 syntax (we use 3.7.5 these days)
+You are free to use any libraries you want.\
+You are expected to use python 3 syntax (we use 3.7.5 these days).\
 You'll probably find the following libraries quite useful:
   - pandas and geopandas
   - pymysql
 
 ## Local http server
-You'll probably need to run a local server when developping the visualization.
-You are also free to choose any method you want
-If you're not sure, running the following command in the terminal,
-in the directory of your html file should suffice
+You'll probably need to run a local server when developping the visualization.\
+You are also free to choose any method you want.\
+If you're not sure, running the following terminal command,
+in the directory of your html file should suffice.
 ```sh
 python -m http.server
 ```
