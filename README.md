@@ -24,7 +24,7 @@ Your job is:
       - lots of people didn't really understand the question and gave non starter pokemon as answer
       - we really only want Bulbasaur, Charmander and Squirtle
     - export this data as a **geojson**
-    - Note: you can visualize the result using mapshaper or geojson.io
+    - Note: you can visualize the result using [mapshaper](https://mapshaper.org/) or [geojson.io](http://geojson.io/)
   - to visualize the data:
     - build a simple html page with a mapbox map
     - add the geojson you prepared as a source
