@@ -19,7 +19,7 @@ Your job is:
     - **clean-up the data**:
       - the person who inserted the data in the database had either a faulty keyboard or faulty fingers
       - so there are some typos in the name of the pokemons (extra spaces, character swap,...)
-      - we don't want to discard these entries
+      - we want you to **keep those entries** and **correct the typos**
     - **only keep** the points we are interested in (those about Bulbasaur, Charmander and Squirtle)
       - lots of people didn't really understand the question and gave non starter pokemon as answer
       - we really only want Bulbasaur, Charmander and Squirtle
